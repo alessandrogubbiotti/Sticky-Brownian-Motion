@@ -7,15 +7,15 @@ This repository implements a discrete-time Markov chain approximation of **Stick
 ## State Space
 
 We consider the discrete state space
-$$
+\[
 \{0, \tfrac{1}{N}, \tfrac{2}{N}, \dots, 1\},
-$$
+\]
 where the chain moves between adjacent points.
 
 For implementation purposes, the states are indexed as integers:
-$$
+\[
 \{0, 1, 2, \dots, N\},
-$$
+\]
 with state \(k\) corresponding to \(k/N\).
 
 ---
