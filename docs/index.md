@@ -96,13 +96,13 @@ Depending on the value of the parameter $a$, we observe different limiting behav
 ## Figures
 
 - **Sticky boundary at 0 ($a > -1$)**  
-  ![Sticky case](/figures/stickyN300T10A-0.5.png)
+  ![Sticky case](https://alessandrogubbiotti.github.io/Sticky-Brownian-Motion/figures/stickyN300T10A-0.5.png)
 
 - **Reflecting boundaries ($a < -1$)**  
-  ![Reflecting case](/figures/stickyN300T10A-1.3.png)
+  ![Reflecting case](https://alessandrogubbiotti.github.io/Sticky-Brownian-Motion/figures/stickyN300T10A-1.3.png)
 
 - **Intermediate regime ($a = -1$)**  
-  ![Intermediate case](/figures/stickyN300T10A-1.0.png)
+  ![Intermediate case](https://alessandrogubbiotti.github.io/Sticky-Brownian-Motion/figures/stickyN300T10A-1.0.png)
 
 <script type="text/javascript" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
