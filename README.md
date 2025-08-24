@@ -35,7 +35,7 @@ For implementation purposes, the states are indexed as integers:
 
 ## Invariant Measure
 
-![Invariant measure](https://latex.codecogs.com/svg.latex?\color{white}\dpi{150}\pi(0)=\tfrac{1}{2},\;\pi(k)=\tfrac{1}{2N},\;k=1,...,N)  
+![Invariant measure](https://latex.codecogs.com/svg.latex?\dpi{150}\color{white}\pi(0)=\tfrac{1}{2},\;\pi(k)=\tfrac{1}{2N},\;k=1,...,N)  
 
 ---
 
