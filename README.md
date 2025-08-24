@@ -1,4 +1,5 @@
 Page's link: [View on GitHub Pages](https://alessandrogubbiotti.github.io/Sticky-Brownian-Motion/)
+
 # Sticky Brownian Motion
 
 This repository implements a discrete Markov chain approximation of a Brownian motion in $[0,1]$, with different boundary conditions at $0$, de Unde**Sticky Brownian Motion**. The discrete dynamics depends on a parameter $a$ and, under a diffusive rescaling, for some choice of the parameter, the limiting Brownian motion is a **Sticky Brownian** at $0$. Other boundary behaviours at $0$, depending on $a$, show up. 
@@ -7,17 +8,13 @@ This repository implements a discrete Markov chain approximation of a Brownian m
 
 ## State Space
 
-We consider the discrete state space
-\[
-\{0, \tfrac{1}{N}, \tfrac{2}{N}, \dots, 1\},
-\]
-where the chain moves between adjacent points.
+We consider the discrete state space  
 
-For implementation purposes, the states are indexed as integers:
-\[
-\{0, 1, 2, \dots, N\},
-\]
-with state \(k\) corresponding to \(k/N\).
+![State space](https://latex.codecogs.com/svg.latex?\{0,\tfrac{1}{N},\tfrac{2}{N},\dots,1\})  
+
+For implementation purposes, the states are indexed as integers:  
+
+![Indexed states](https://latex.codecogs.com/svg.latex?\{0,1,2,\dots,N\})  
 
 ---
 
@@ -38,36 +35,7 @@ with state \(k\) corresponding to \(k/N\).
 
 ## Invariant Measure
 
-Since the chain is a **birth-death process**, we can compute its invariant distribution \(\pi\) using detailed balance.
-
-For interior states:
-\[
-\pi(k+1)/\pi(k) = 1/1 = 1 \quad \implies \quad \pi(k) \; \text{constant for } k=1,\dots,N.
-\]
-
-At the left boundary:
-\[
-\frac{\pi(1)}{\pi(0)} = \frac{N^{a-1}}{N^a} = \frac{1}{N}.
-\]
-
-At the right boundary:
-\[
-\pi(N)/\pi(N-1) = 1.
-\]
-
-Thus:
-\[
-\pi(0) \propto N, \qquad \pi(k) \propto 1 \quad (k=1,\dots,N).
-\]
-
-Normalizing:
-\[
-Z = N + N = 2N,
-\]
-so
-\[
-\pi(0) = \tfrac{1}{2}, \qquad \pi(k) = \tfrac{1}{2N}, \quad k=1,\dots,N.
-\]
+![Invariant measure](https://latex.codecogs.com/svg.latex?\pi(0)=\tfrac{1}{2},\;\pi(k)=\tfrac{1}{2N},\;k=1,...,N)  
 
 ---
 
@@ -89,8 +57,6 @@ Depending on the value of the parameter \(a\), we observe different limiting beh
 
 ## Figures
 
-We illustrate the three regimes below:
-
 - **Sticky boundary at 0 (\(a > -1\))**  
   ![Sticky case](figures/stickyN300T10A-0.5.png)
 
@@ -100,8 +66,4 @@ We illustrate the three regimes below:
 - **Intermediate regime (\(a = -1\))**  
   ![Intermediate case](figures/stickyN300T10A-1.0.png)
 
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 
----
