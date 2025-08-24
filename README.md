@@ -20,7 +20,7 @@ For implementation purposes, the states are indexed as integers:
 
 ## Transition Rates
 
-- **Interior states** (\(k = 1, \dots, N-1\), corresponding to \(1/N, \dots, 1-1/N\)):  
+- **Interior states** $(k = 1, \dots, N-1$, corresponding to \(1/N, \dots, 1-1/N\)):  
   The jump rates are symmetric with value **1** for moving left or right.
 
 - **Left boundary at 0**:
