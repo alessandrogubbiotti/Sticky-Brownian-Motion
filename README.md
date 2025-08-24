@@ -1,3 +1,8 @@
+---
+layout: default
+title: Sticky Brownian Motion
+---
+Page's link: [View on GitHub Pages](https://alessandrogubbiotti.github.io/Sticky-Brownian-Motion/)
 # Sticky Brownian Motion
 
 This repository implements a discrete Markov chain approximation of a Brownian motion in $[0,1]$, with different boundary conditions at $0$, de Unde**Sticky Brownian Motion**. The discrete dynamics depends on a parameter $a$ and, under a diffusive rescaling, for some choice of the parameter, the limiting Brownian motion is a **Sticky Brownian** at $0$. Other boundary behaviours at $0$, depending on $a$, show up. 
