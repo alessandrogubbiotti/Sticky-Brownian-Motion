@@ -1,7 +1,3 @@
----
-layout: default
-title: Sticky Brownian Motion
----
 Page's link: [View on GitHub Pages](https://alessandrogubbiotti.github.io/Sticky-Brownian-Motion/)
 # Sticky Brownian Motion
 
