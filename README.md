@@ -99,6 +99,8 @@ We illustrate the three regimes below:
 - **Intermediate regime (\(a = -1\))**  
   ![Intermediate case](figures/stickyN300T10A-1.0.png)
 
-*(Add the actual figures in a `/figures` folder and update the filenames above.)*
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 
 ---
