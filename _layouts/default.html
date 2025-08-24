@@ -3,7 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
-  <script type="text/javascript" id="MathJax-script" async
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script','noscript','style','textarea','pre']
+      }
+    };
+  </script>
+  <script type="text/javascript" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
 </head>
@@ -11,4 +22,3 @@
   {{ content }}
 </body>
 </html>
-
