@@ -2,7 +2,7 @@ Page's link: [View on GitHub Pages](https://alessandrogubbiotti.github.io/Sticky
 
 # Sticky Brownian Motion
 
-This repository implements a discrete Markov chain approximation of a Brownian motion in $[0,1]$, with different boundary conditions at $0$, de Unde**Sticky Brownian Motion**. The discrete dynamics depends on a parameter $a$ and, under a diffusive rescaling, for some choice of the parameter, the limiting Brownian motion is a **Sticky Brownian** at $0$. Other boundary behaviours at $0$, depending on $a$, show up. 
+This repository implements a discrete Markov chain approximation of a Brownian motion in $[0,1]$, with different boundary conditions at $0$. The discrete dynamics depends on a parameter $a$ and, under a diffusive rescaling, for some choice of the parameter, the limiting Brownian motion is a **Sticky Brownian** at $0$. Other boundary behaviours at $0$, depending on $a$, show up. 
 
 ---
 
@@ -20,15 +20,14 @@ For implementation purposes, the states are indexed as integers:
 
 ## Transition Rates
 
-- **Interior states** $(k = 1, \dots, N-1$, corresponding to \(1/N, \dots, 1-1/N\)):  
-  The jump rates are symmetric with value **1** for moving left or right.
+- **Interior states** At the interior states $ 1/N, \dots, 1-1/N$, the jump rates are symmetric with value **1** for moving left or right.
 
 - **Left boundary at 0**:
-  - From \(0 \to 1/N\): rate \(N^{a-1}\).
-  - From \(1/N \to 0\): rate \(N^{a}\).
+  - Transition $0 \to 1/N$: rate $N^{a-1}$.
+  - Transition $1/N \to 0$: rate $N^{a}$.
 
 - **Right boundary at 1**:  
-  - From \(1 \to 1 - 1/N\): rate **1**.  
+  - Transition $1 \to 1 - 1/N$: rate **1**.  
   (This boundary is less interesting since it behaves like a reflecting boundary.)
 
 ---
@@ -41,29 +40,29 @@ For implementation purposes, the states are indexed as integers:
 
 ## Scaling Limits
 
-The aim is to analyze the **diffusive scaling limit** of the process as \(N \to \infty\).  
-Depending on the value of the parameter \(a\), we observe different limiting behaviors at the left boundary:
+The aim is to analyze the **diffusive scaling limit** of the process as $N \to \infty$.  
+Depending on the value of the parameter $a$, we observe different limiting behaviors at the left boundary:
 
-- **Case \(a > -1\)**:  
+- **Case $a > -1$**:  
   The process converges to **Brownian motion with a sticky boundary condition at 0** and reflecting at 1.
 
-- **Case \(a < -1\)**:  
+- **Case $a < -1$**:  
   Both boundaries become **reflecting** in the limit.
 
-- **Case \(a = -1\)**:  
+- **Case $a = -1$**:  
   An intermediate regime where the particle spends an **exponential amount of time at the origin** before resuming Brownian motion.
 
 ---
 
 ## Figures
 
-- **Sticky boundary at 0 (\(a > -1\))**  
+- **Sticky boundary at 0 $(a > -1)$**  
   ![Sticky case](figures/stickyN300T10A-0.5.png)
 
-- **Reflecting boundaries (\(a < -1\))**  
+- **Reflecting boundaries $(a < -1)$**  
   ![Reflecting case](figures/stickyN300T10A-1.3.png)
 
-- **Intermediate regime (\(a = -1\))**  
+- **Intermediate regime $(a = -1)$**  
   ![Intermediate case](figures/stickyN300T10A-1.0.png)
 
 
