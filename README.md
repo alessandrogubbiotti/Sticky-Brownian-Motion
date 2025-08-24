@@ -91,13 +91,13 @@ Depending on the value of the parameter \(a\), we observe different limiting beh
 We illustrate the three regimes below:
 
 - **Sticky boundary at 0 (\(a > -1\))**  
-  ![Sticky case](figures/sticky_case.png)
+  ![Sticky case](figures/stickyN300T10A-1.3.png)
 
 - **Reflecting boundaries (\(a < -1\))**  
-  ![Reflecting case](figures/reflecting_case.png)
+  ![Reflecting case](figures/stickyN300T10A-0.5.png)
 
 - **Intermediate regime (\(a = -1\))**  
-  ![Intermediate case](figures/intermediate_case.png)
+  ![Intermediate case](figures/stickyN300T10A-1.0.png)
 
 *(Add the actual figures in a `/figures` folder and update the filenames above.)*
 
