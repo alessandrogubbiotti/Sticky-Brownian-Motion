@@ -1,3 +1,7 @@
 # Ignore all .out files
 *.out
 *.dat
+
+# The program and the picture it draws
+/sticky
+/trajectory.png
